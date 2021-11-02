@@ -16,7 +16,13 @@
     <body>
 
         <body onload="start();">
-            
+       
+        function start() {
+        //create bear
+        bear = new Bear();
+        // Add an event listener to the keypress event.
+        document.addEventListener("keydown", moveBear, false)
+        }
         
         <div id="title">
             <h1>Help the bear escape the bees !</h1>
