@@ -10,6 +10,7 @@ function Bear() {
  this.display();
  };
  this.display = function() {
+ this.fitBounds();
  this.htmlElement.style.left = this.x + "px";
  this.htmlElement.style.top = this.y + "px";
  this.htmlElement.style.display = "absolute";
