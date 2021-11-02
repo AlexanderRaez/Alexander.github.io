@@ -74,7 +74,7 @@ this.move = function(xDir, yDir) {
  this.display();
  };
 
-class Bee {
+class Bees {
  constructor(beeNumber) {
   //the HTML element corresponding to the IMG of the bee
   this.htmlElement = createBeeImg(beeNumber);
@@ -130,7 +130,7 @@ function createBeeImg(wNum) {
  //create the IMG element
  let img = document.createElement("img");
  img.setAttribute("src", "images/bee.gif");
- img.setAttribute("width", "100");
+ img.setAttribute("width", "25");
  img.setAttribute("alt", "A bee!");
  img.setAttribute("id", "bee" + wNum);
  img.setAttribute("class", "bee"); //set class of html tag img
@@ -146,6 +146,9 @@ function createBeeImg(wNum) {
  return img;
 }
 
+function getRandomInt(min, max) {
+ return Math.floor(Math.random() * (max - min + 1) + min);
+}
 
 function makeBees() {
  //get number of bees specified by the user
