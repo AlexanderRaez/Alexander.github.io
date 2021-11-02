@@ -1,9 +1,9 @@
 #bear {
     position: absolute;
-    left: 100px;
+    left: 200px;
     /*top: 240px;*/
-    width: 100px;
-    height: 160px
+    width: 200px;
+    height: 320px
 }
 
 #board {
