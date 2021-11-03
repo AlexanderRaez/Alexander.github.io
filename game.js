@@ -4,16 +4,18 @@ function Bear() {
  this.id = this.htmlElement.id;
  this.x = this.htmlElement.offsetLeft;
  this.y = this.htmlElement.offsetTop;
+
  this.move = function(xDir, yDir) {
- this.x += this.dBear * xDir;
- this.y += this.dBear * yDir;
- this.display();
+  this.x += this.dBear * xDir;
+  this.y += this.dBear * yDir;
+  this.display();
  };
+ 
  this.display = function() {
- this.fitBounds();
- this.htmlElement.style.left = this.x + "px";
- this.htmlElement.style.top = this.y + "px";
- this.htmlElement.style.display = "absolute";
+  this.fitBounds();
+  this.htmlElement.style.left = this.x + "px";
+  this.htmlElement.style.top = this.y + "px";
+  this.htmlElement.style.display = "absolute";
  };
 }
 
@@ -26,6 +28,7 @@ function start() {
         document.addEventListener("keydown", moveBear, false)
         // create bee
         bees = new Arry();
+  
         makeBees();
         }
 
@@ -146,8 +149,8 @@ function createBeeImg(wNum) {
  return img;
 }
 
-function getRandomInt(min, max) {
- return Math.floor(Math.random() * (max - min + 1) + min);
+function getRandomInt(0, max) {
+ return Math.floor(Math.random() * (max - 0 + 1) + 0);
 }
 
 function makeBees() {
