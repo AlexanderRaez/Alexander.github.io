@@ -153,7 +153,7 @@ function createBeeImg(wNum) {
  return img;
 }
 
-function getRandomInt(0, max) {
+function getRandomInt(max) {
  return Math.floor(Math.random() * (max - 0 + 1) + 0);
 }
 
